@@ -1,1 +1,11 @@
+检查 input参数，是否都设置齐全或者对了。参数check这里需要有很多check项，在我的home下有一个专门的文件记录了其中一部分参数。有不同类的参数，影响不一样文件的设置。比如可以看看这些参数是怎么影响cmd或者脚本里边的内容的。一般cmd是影响tool的设置。而脚本里边的内容是影响vovinput或者output这样一些flow 环境参数的设置。总之先要study all require参数，以及这些参数设置可能带来的影响，然后再喂给脚本去判断。 
 
+检查cmd，tbo cmd，看是否有change 
+
+检查imput file是否齐全 
+
+检查从别处cp的file是否跟flow中已经拿到的是一致的。比如svf，一般来说svf应该跟release路径下的workspace link里的svf去对比。 
+
+如果以上都检查清楚了，就开始execution target，并检查target的状态，不管挂了，或者跑过了都要report状态到邮箱 
+
+ 
